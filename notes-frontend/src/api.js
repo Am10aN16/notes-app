@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'http://localhost:5000/api'
+    baseURL: 'https://notes-app-lsdn.onrender.com/api'
 });
 
 export const createGroup = (data) => api.post('/groups/create', data);
